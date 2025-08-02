@@ -62,12 +62,7 @@ Data columns (total 24 columns):
  23  Cantidad de Servicios Contratados  7043 non-null   int64  
 ```
 
-## Estructura del Notebook TelecomX_LATAM.ipynb
-
-El notebook cubre la fase de análisis y modelado de datos, desde la preparación inicial hasta la interpretación de los resultados finales. 
-# 🚀 Predicción de Cancelación de Servicios (Churn Prediction)
-
-## Índice de Contenidos
+## Índice de Contenidos de TelecomX_LATAM.ipynb
 
 ### 1. Preparación de Datos
 - 1.1 Carga y Exploración Inicial]: Se presenta la composición de los datos, identificando la clase principal.
@@ -75,15 +70,15 @@ El notebook cubre la fase de análisis y modelado de datos, desde la preparació
 - 1.3 Análisis de Gráficos para Variables Numéricas: Se identifican y analizan variables relevantes, describiendo sus asimetrías y características de distribución. También se incluye el análisis de variables binarias y servicios adicionales, destacando su relación con la probabilidad de abandono y la importancia de algunos servicios.
 -  1.4 Gráficos de Variables Categóricas:Se identifican y analizan variables categóricas, destacando su relación con cancelación del servicio.
 - 1.5 Información Mutua:Se aplica la técnica para medir la dependencia entre dos variables e identificar características por su relevancia, esto nos permitirá simplificar el modelo se ser necesario.
-- 1.6 Detección y Tratamiento de Outliers:Se aplican transformaciones (logarítmica, Box-Cox y raíz cuadrada) que nos ayudan a Iientificar y transformar valores atípicos que pueden distorsionar el análisis estadístico y el rendimiento de modelos.
-- 1.7 Codificación de Variables Categóricas:Se identifican las correlaciones positivas y negativas de diversas variables con la probabilidad de abandono.
+- 1.6 Detección y Tratamiento de Outliers:Se aplican transformaciones (logarítmica, Box-Cox y raíz cuadrada) que nos ayudan a identificar y transformar valores atípicos que pueden distorsionar el análisis estadístico y el rendimiento de modelos.
+- 1.7 Codificación de Variables Categóricas: Se identifican las correlaciones positivas y negativas de diversas variables con la probabilidad de abandono.
 
 ### 2. Preparación para Modelado
 - 2.1 Separación de Datos:Dividir el conjunto de datos en subconjuntos para entrenamiento, validación y prueba en una proporción 80% entrenamiento, 20% prueba. 
-- 2.2 Balanceo de Clases:Se explica la decisión de no aplicar balanceo debido a que la relación de desbalanceo (2.77) se considera moderada y no crítica.
+- 2.2 Balanceo de Clases: Aunque se evidencia un desbalanceo, no se aplica ninguna tácnica de balanceo debido a que la relación de desbalanceo (2.77) se considera moderada y no crítica y se puede tratar en el modelado.
 
 ### 3. Entrenamiento de Modelos
-- 3.1 Selección de Modelos: Se justifica la elección de modelos como Random Forest, CatBoost y XGBoost, destacando sus características y adecuación para el problema.
+- 3.1 Selección de Modelos: Elección de modelos como adecuados al caso de clasificación y caracteristicas de los datos. Se propone: Random Forest, CatBoost y XGBoost.
 - 3.2 Random Forest
 - 3.3 CatBoost
 - 3.4 XGBoost
