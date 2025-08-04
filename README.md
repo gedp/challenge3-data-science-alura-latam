@@ -114,6 +114,9 @@ Data columns (total 24 columns):
 - Pandas
 - Matplotlib
 - Seaborn
+- Scikit-learn (sklearn)
+- Catboost
+- XGBoost
 - Jupyter Notebook
 
 ## Uso
@@ -123,5 +126,36 @@ Data columns (total 24 columns):
 3. Ejecuta las celdas para reproducir el modelado
 
 ---
+## Uso de modleo entrenado
+Para utilizar modelo_xgboost_reducido.pkl en el contexto de predicción de cancelación (churn) de Telecom siga los siguientes pasos:
+1. Cargar el modelo entrenado modelo_xgboost_reducido.pkl en el entorno de Python usando la librería pickle.
+
+```
+import pickle
+
+# Guardar modelo
+with open('modelo_xgboost_reducido.pkl', 'wb') as archivo:
+    pickle.dump(modelo, archivo)
+
+# Cargar modelo
+with open('modelo_xgboost_reducido.pkl', 'rb') as archivo:
+    modelo_cargado = pickle.load(archivo)
+```
+2. Cargar los nuevos datos para predicción.
+3. Preparar los nuevos datos de la misma manera que los datos de entrenamiento.
+    - Limpieza de datos: Eliminar 'ID Cliente', 'Costo Diario' y 'Duración del Contrato (meses)'.
+    - Tratamiento de variables numéricas.
+    - Codificación de variables categóricas y binarias.
+    - Selección y reducción de variables: Dado que el modelo XGBoost se optimizó con un "Dataframe de variables reducidas", es imprescindible que los nuevos datos contengan solo las variables relevantes que fueron seleccionadas para el modelo final.
+4. Realizar predicciones:
+    - Una vez que los nuevos datos estén completamente preparados y tengan la misma estructura y características que los datos de entrenamiento, podrás pasarlos al modelo cargado para obtener las predicciones de churn.
+    - Considera aplicar en el análisis de la curva ROC el umbral a las probabilidades de predicción.
+```
+# Predecir
+predicciones = modelo_cargado.predict(X_test_nuevos)
+probabilidades = modelo_cargado.predict_proba(X_test_nuevos)
+```
+   
+5. Interpretar los resultados. para entender qué factores están influyendo en las predicciones de churn para los nuevos clientes.
 
 **Autor:** Ana Sayago  
