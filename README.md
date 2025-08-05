@@ -81,7 +81,6 @@ Data columns (total 24 columns):
 
 ![alt text](image-3.png)
 
-![alt text](image-4.png)
 ### 2. Preprocesamiento
 - 2.1 Separación de Datos: Dividir el conjunto de datos en subconjuntos para entrenamiento, validación y prueba en una proporción 80% entrenamiento, 20% prueba. 
 - 2.2 Balanceo de Clases: Aunque se evidencia un desbalanceo, no se aplica ninguna tácnica de balanceo debido a que la relación de desbalanceo (2.77) se considera moderada (no crítica) y se puede tratar en el modelado.
@@ -107,7 +106,9 @@ Data columns (total 24 columns):
 - 5.5 Análisis de Overfitting. Se evalua la capacidad de generalización de los modelos.
 - 5.6 Validación Cruzada. Se hace para mejorar la estimación de rendimiento y validar la capacidad de generalización.
 - 5.7 Dataframe de Variables Reducidas. Se propone reducir la cantidad de variables reducir la complejidad del dataset y luego volver a evaluar los algortimos. Se objerva un amejora significativo en todos, especialmente en XGBoost. 
-- 5.8 Ajuste de Umbral. Despues de  observar el ROC se realiza un ajuste de 0.4 para reducir los falsos negativos. 
+- 5.8 Ajuste de Umbral. Despues de  observar el ROC se realiza un ajuste de 0.45 para reducir los falsos negativos. 
+
+![alt text](image-4.png)
 
 ### 6. Interpretación
 - 6.1 Análisis de Variables Relevantes XGBoost Se revisan las variables mas relevantes para la predicción de cancelación en el modelo XGBoost reducido (el cual ha sido el modelo con mejores resultados).
