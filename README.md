@@ -73,6 +73,13 @@ Data columns (total 24 columns):
 - 1.6 Detección y Tratamiento de Outliers: Se aplican transformaciones (logarítmica, Box-Cox y raíz cuadrada) que nos ayudan a identificar y transformar valores atípicos que pueden distorsionar el análisis estadístico y el rendimiento de modelos.
 - 1.7 Codificación de Variables Categóricas: Se identifican las correlaciones positivas y negativas de diversas variables con la probabilidad de abandono.
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 ### 2. Preprocesamiento
 - 2.1 Separación de Datos: Dividir el conjunto de datos en subconjuntos para entrenamiento, validación y prueba en una proporción 80% entrenamiento, 20% prueba. 
 - 2.2 Balanceo de Clases: Aunque se evidencia un desbalanceo, no se aplica ninguna tácnica de balanceo debido a que la relación de desbalanceo (2.77) se considera moderada (no crítica) y se puede tratar en el modelado.
