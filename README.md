@@ -126,7 +126,7 @@ Data columns (total 24 columns):
 3. Ejecuta las celdas para reproducir el modelado
 
 ---
-## Uso de modleo entrenado
+## Uso de modelo entrenado
 Para utilizar modelo_xgboost_reducido.pkl en el contexto de predicción de cancelación (churn) de Telecom siga los siguientes pasos:
 1. Cargar el modelo entrenado modelo_xgboost_reducido.pkl en el entorno de Python usando la librería pickle.
 
