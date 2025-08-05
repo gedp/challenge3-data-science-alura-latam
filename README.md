@@ -29,7 +29,7 @@ Desarrollar un modelo predictivo para identificar clientes con alto riesgo de ca
 - **TelecomX_LATAM.ipynb**: Notebook principal con todo el proceso de análisis, desde la carga y limpieza de datos hasta la visualización y conclusiones.
 - **datos_tratados**: Fuente de datos tratados en proyecto anterior. 
 - **modelo_xgboost_reducido.plk**: Modelo XGBOOST generado
-- **Informe_TelecomX_Cancelacion**: Informe detallado sobre resultados y hallazgos
+- **Informe TelecomX - Parte 2.pdf**: Informe detallado sobre resultados y hallazgos
 
 ### Datos iniciales 
 ```
